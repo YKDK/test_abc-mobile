@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230425164300">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header _display-status">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<div class="menu__image">
+						<picture><source srcset="img/brain.webp" type="image/webp"><img src="img/brain.png" alt="image"></picture>
+					</div>
+					<div class="menu__title">
+						<p>тест на определение IQ</p>
+					</div>
+					<div class="menu__title-result">Готово!</div>
+
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link link">Главная</a></li>
+							<li class="menu__item"><a href="#" class="menu__link link">Информация о тесте</a></li>
+							<li class="menu__item"><a href="test.html" class="menu__link link link--color">пройти тест</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__test test">
+				<div class="test__progress-bar progress-bar">
+					<div class="progress-bar__line"></div>
+
+				</div>
+				<div action="#" method="" class="test__content">
+					<form class="test__form question">
+						<div class="test__block">
+							<div class="test__title">ваш пол:</div>
+							<div class="test__actions">
+								<div class="test__choice choice">
+									<input id="o-1" type="radio" data-required name="sex" value="male" class="choice__input">
+									<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-1">Мужчина</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-2" type="radio" data-required name="sex" value="female" class="choice__input">
+									<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-2">Женщина</label>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="test__button button button--bg" disabled>далее</button>
+
+					</form>
+					<form class="test__form question _hide">
+						<div class="test__block">
+							<div class="test__title">укажите ваш возраст:</div>
+							<div class="test__actions">
+								<div class="test__choice choice">
+									<input id="o-3" type="radio" data-required name="age" value="0-18" class="choice__input">
+									<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-3">До 18</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-4" type="radio" data-required name="age" value="18-28" class="choice__input">
+									<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-4">От 18 до
+										28</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-5" type="radio" data-required name="age" value="29-35" class="choice__input">
+									<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-5">От 29 до
+										35</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-6" type="radio" data-required name="age" value="36+" class="choice__input">
+									<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-6">От 36</label>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="test__button button button--bg" disabled>далее</button>
+
+					</form>
+					<form class="test__form question _hide">
+						<div class="test__block">
+							<div class="test__title">Выберите лишнее:</div>
+							<div class="test__actions">
+								<div class="test__choice choice">
+									<input id="o-7" type="radio" data-required name="select-item" value="house" class="choice__input">
+									<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-7">Дом</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-8" type="radio" data-required name="select-item" value="Shack" class="choice__input">
+									<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-8">Шалаш</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-9" type="radio" data-required name="select-item" value="Bungalow" class="choice__input">
+									<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-9">Бунгало</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-10" type="radio" data-required name="select-item" value="Bench" class="choice__input">
+									<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-10">Скамейка</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-11" type="radio" data-required name="select-item" value="hut" class="choice__input">
+									<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-11">Хижина</label>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="test__button button button--bg" disabled>далее</button>
+
+					</form>
+					<form class="test__form question _hide">
+						<div class="test__block">
+							<div class="test__title">Продолжите числовой ряд: 18 20 24 32</div>
+							<div class="test__actions">
+								<div class="test__choice choice">
+									<input id="o-12" type="radio" data-required name="numbers" value="62" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-12">62</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-13" type="radio" data-required name="numbers" value="48" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-13">48</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-14" type="radio" data-required name="numbers" value="74" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-14">74</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-15" type="radio" data-required name="numbers" value="57" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-15">57</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-16" type="radio" data-required name="numbers" value="60" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-16">60</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-17" type="radio" data-required name="numbers" value="77" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-17">77</label>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="test__button button button--bg" disabled>далее</button>
+
+					</form>
+					<form class="test__form question _hide">
+						<div class="test__block">
+							<div class="test__title test__title--square test__title--fs19">Выберите цвет, который сейчас наиболее Вам
+								приятен:</div>
+							<div class="test__actions test__actions--square">
+								<div class="test__choice choice">
+									<input id="o-18" type="radio" data-required name="color" value="gray" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-gray" for="o-18"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-19" type="radio" data-required name="color" value="dark-blue" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-dark-blue" for="o-19"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-20" type="radio" data-required name="color" value="green" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-green" for="o-20"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-21" type="radio" data-required name="color" value="red" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-red" for="o-21"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-22" type="radio" data-required name="color" value="yellow" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-yellow" for="o-22"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-23" type="radio" data-required name="color" value="brown" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-brown" for="o-23"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-24" type="radio" data-required name="color" value="black" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-black" for="o-24"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-25" type="radio" data-required name="color" value="purple" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-purple" for="o-25"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-26" type="radio" data-required name="color" value="lilac" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-lilac" for="o-26"></label>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="test__button button button--bg" disabled>далее</button>
+
+					</form>
+					<form class="test__form question _hide">
+						<div class="test__block">
+							<div class="test__title test__title--square test__title--fs19">Отдохните пару секунд, еще раз Выберите
+								цвет, который сейчас наиболее Вам приятен:</div>
+							<div class="test__actions test__actions--square">
+								<div class="test__choice choice">
+									<input id="o-27" type="radio" data-required name="color" value="gray" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-gray" for="o-27"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-28" type="radio" data-required name="color" value="lilac" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-lilac" for="o-28"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-29" type="radio" data-required name="color" value="brown" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-brown" for="o-29"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-30" type="radio" data-required name="color" value="green" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-green" for="o-30"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-31" type="radio" data-required name="color" value="black" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-black" for="o-31"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-32" type="radio" data-required name="color" value="red" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-red" for="o-32"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-33" type="radio" data-required name="color" value="purple" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-purple" for="o-33"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-34" type="radio" data-required name="color" value="yellow" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-yellow" for="o-34"></label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-35" type="radio" data-required name="color" value="dark-blue" class="choice__input">
+									<label class="choice__label choice__label--color choice__label--color-dark-blue" for="o-35"></label>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="test__button button button--bg" disabled>далее</button>
+
+					</form>
+					<form class="test__form question _hide">
+						<div class="test__block">
+							<div class="test__title">Какой из городов лишний?</div>
+							<div class="test__actions">
+								<div class="test__choice choice">
+									<input id="o-36" type="radio" data-required name="city" value="Washington" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-36">Вашингтон</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-37" type="radio" data-required name="city" value="London" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-37">Лондон</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-38" type="radio" data-required name="city" value="Paris" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-38">Париж</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-39" type="radio" data-required name="city" value="New York" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-39">Нью-Йорк</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-40" type="radio" data-required name="city" value="Orkostan" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-40">Оркостан</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-41" type="radio" data-required name="city" value="Ottawa" class="choice__input">
+									<label class="choice__label choice__label--h40 choice__label--bg _icon-ellips" for="o-41">Оттава</label>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="test__button button button--bg" disabled>далее</button>
+
+					</form>
+					<form class="test__form question _hide">
+						<div class="test__block">
+							<div class="test__title test__title--fs18 test__title--figure">Выберите правильную фигуру из четырёх
+								пронумерованных.</div>
+							<div class="test__actions test__actions--figure">
+								<div class="test__image test__image--figure">
+									<picture><source srcset="img/figure.webp" type="image/webp"><img src="img/figure.png" alt="image"></picture>
+								</div>
+								<div class="test__items">
+									<div class="test__choice  choice">
+										<input id="o-42" type="radio" data-required name="figure" value="1" class="choice__input">
+										<label class="choice__label choice__label--figure" for="o-42">1</label>
+									</div>
+									<div class="test__choice  choice">
+										<input id="o-43" type="radio" data-required name="figure" value="2" class="choice__input">
+										<label class="choice__label choice__label--figure" for="o-43">2</label>
+									</div>
+									<div class="test__choice  choice">
+										<input id="o-44" type="radio" data-required name="figure" value="3" class="choice__input">
+										<label class="choice__label choice__label--figure" for="o-44">3</label>
+									</div>
+									<div class="test__choice  choice">
+										<input id="o-45" type="radio" data-required name="figure" value="4" class="choice__input">
+										<label class="choice__label choice__label--figure" for="o-45">4</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="test__button button button--bg" disabled>далее</button>
+
+					</form>
+					<form class="test__form question _hide">
+						<div class="test__block">
+							<div class="test__title test__title--fs19">Вам привычнее и важнее:</div>
+							<div class="test__actions test__actions--important">
+								<div class="test__choice choice">
+									<input id="o-46" type="radio" data-required name="important" value="Enjoy every minute time spent" class="choice__input">
+									<label class="choice__label choice__label--important choice__label--h78 choice__label--bg _icon-ellips" for="o-46">Наслаждаться <br> каждой минутой проведенного времени</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-47" type="radio" data-required name="important" value="Be determined thinking about the future" class="choice__input">
+									<label class="choice__label choice__label--important choice__label--h78 choice__label--bg _icon-ellips" for="o-47">Быть устремленными мыслями в будущее</label>
+								</div>
+								<div class="test__choice choice">
+									<input id="o-48" type="radio" data-required name="important" value="Take into account in the daily
+                  practice past experience" class="choice__input">
+									<label class="choice__label choice__label--important choice__label--h78 choice__label--bg _icon-ellips" for="o-48">Учитывать в ежедневной практике прошлый опыт</label>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="test__button button button--bg" disabled>далее</button>
+
+					</form>
+					<form class="test__form question _hide">
+						<div class="test__block">
+							<div class="test__title test__title--triangle test__title--fs16">Какое определение, по-Вашему, больше
+								подходит к этому геометрическому изображению:</div>
+							<div class="test__actions test__actions--triangle">
+								<div class="test__image test__image--triangle">
+									<picture><source srcset="img/triangle.webp" type="image/webp"><img src="img/triangle.png" alt="image"></picture>
+								</div>
+								<div class="test__items test__items--triangle">
+									<div class="test__choice choice">
+										<input id="o-49" type="radio" data-required name="image" value="it is pointed" class="choice__input">
+										<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-49">Оно
+											остроконечное</label>
+									</div>
+									<div class="test__choice choice">
+										<input id="o-50" type="radio" data-required name="image" value="it is stable" class="choice__input">
+										<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-50">Оно
+											устойчиво</label>
+									</div>
+									<div class="test__choice choice">
+										<input id="o-51" type="radio" data-required name="image" value="it is in a state of equilibrium" class="choice__input">
+										<label class="choice__label choice__label--h50 choice__label--bg _icon-ellips" for="o-51">Оно-находится в состоянии равновесия</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="test__button button button--bg" disabled>далее</button>
+					</form>
+					<form class="test__form question _hide">
+						<div class="test__block">
+							<div class="test__title test__title--star">Вставьте подходящее число</div>
+							<div class="test__actions test__actions--star">
+								<div class="test__image test__image--star">
+									<picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt="image"></picture>
+								</div>
+								<div class="test__items test__items--star">
+									<div class="test__choice  choice">
+										<input id="o-52" type="radio" data-required name="star" value="34" class="choice__input">
+										<label class="choice__label choice__label--figure" for="o-52">34</label>
+									</div>
+									<div class="test__choice  choice">
+										<input id="o-53" type="radio" data-required name="star" value="36" class="choice__input">
+										<label class="choice__label choice__label--figure" for="o-53">36</label>
+									</div>
+									<div class="test__choice  choice">
+										<input id="o-54" type="radio" data-required name="star" value="53" class="choice__input">
+										<label class="choice__label choice__label--figure" for="o-54">53</label>
+									</div>
+									<div class="test__choice  choice">
+										<input id="o-54" type="radio" data-required name="star" value="44" class="choice__input">
+										<label class="choice__label choice__label--figure" for="o-54">44</label>
+									</div>
+									<div class="test__choice  choice">
+										<input id="o-55" type="radio" data-required name="star" value="66" class="choice__input">
+										<label class="choice__label choice__label--figure" for="o-55">66</label>
+									</div>
+									<div class="test__choice  choice">
+										<input id="o-56" type="radio" data-required name="star" value="42" class="choice__input">
+										<label class="choice__label choice__label--figure" for="o-56">42</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="test__button button button--bg" disabled>далее</button>
+					</form>
+					<div class="test__form preloader _hide">
+						<div class="test__block">
+							<div class="test__title test__title--fs23">Обработка <br> результатов</div>
+							<div class="loader">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="test__title-load">
+								Определение стиля мышления.................
+								.................................................................
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230425164300"></script>
+</body>
+
+</html>
