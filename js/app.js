@@ -206,7 +206,18 @@
         }
     } else header.className = "header _display-status";
     const headerMenu = document.querySelector(".menu");
-    if (location.href.includes(`result`)) headerMenu.classList.add("_hide"); else headerMenu.classList.remove("_hide");
+    if (location.href.includes(`test-result`)) {
+        headerMenu.classList.add("_hide");
+        const clock = document.querySelector(".timer__time");
+        if (clock) {
+            let time = 10;
+            setInterval((() => {
+                time -= 1;
+                if (time < 0) time = 60;
+                clock.innerText = `${time}:00 минут`;
+            }), 6e4);
+        }
+    } else headerMenu.classList.remove("_hide");
     const tests = document.querySelectorAll(".test__form");
     document.addEventListener("click", action);
     function action(e) {
